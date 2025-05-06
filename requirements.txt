@@ -1,0 +1,13 @@
+feedparser
+requests
+python-dateutil
+pandas
+matplotlib
+seaborn
+transformers
+torch
+sentencepiece
+pyyaml
+tqdm
+openai
+python-dotenv

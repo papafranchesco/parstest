@@ -1,0 +1,47 @@
+database:
+  path: "data/news.db"
+
+subjects:
+  - Путин
+  - Макрон
+
+rss_feeds:
+  - name: RBC
+    url: "https://rssexport.rbc.ru/rbcnews/news/20/full.rss"
+  - name: RIA
+    url: "https://ria.ru/export/rss2/index.xml"
+  - name: LeMonde
+    url: "https://www.lemonde.fr/politique/rss_full.xml"
+  - name: Kommersant
+    url: "https://www.kommersant.ru/RSS/news.xml"
+  - name: Guardian
+    url: "https://www.theguardian.com/world/rss"
+  - name: TASS
+    url: "https://tass.ru/rss/v2.xml"
+  - name: Guardian
+    url: "https://www.theguardian.com/world/rss"
+  - name: Spiegel
+    url: "https://www.spiegel.de/international/index.rss"
+  - name: PoliticoEU
+    url: "https://www.politico.eu/feed/"
+  # —США—
+  - name: NYTimesWorld
+    url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
+  - name: WPWorld
+    url: "https://feeds.washingtonpost.com/rss/world"
+  - name: CNNWorld
+    url: "https://rss.cnn.com/rss/edition_world.rss"
+  - name: Bloomberg
+    url: "https://www.bloomberg.com/politics/feed"
+  - name: BBCWorld
+    url: "http://feeds.bbci.co.uk/news/world/rss.xml"
+  - name: ReutersWorld
+    url: "http://feeds.reuters.com/Reuters/worldNews"
+
+api_sources:
+  - name: NewsAPI
+    type: newsapi
+    api_key: ${NEWSAPI_KEY}
+    query: "Путин OR Putin OR Poutine OR Макрон OR Macron"
+    from: "2025-01-01"
+    language: "ru,en,fr"
